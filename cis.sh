@@ -32,7 +32,7 @@ validate_ipv4_cidr() {
 
 # 循环提示用户输入网段，直到输入有效
 while true; do
-    read -p "请输入要扫描的网段 (例如: 192.168.1.0/24 或 43.159.64.0/18): " TARGET_NETWORK
+    read -p "请输入要扫描的网段 (示例: 43.159.64.0/18): " TARGET_NETWORK
 
     # 检查输入是否为空
     if [ -z "$TARGET_NETWORK" ]; then
